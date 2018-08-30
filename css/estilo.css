@@ -1,0 +1,148 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+    }
+    
+    .menuitem {
+        background-color: #e5e5e5;
+        padding: 8px;
+        margin-top: 7px;
+    }
+    
+    .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+    }
+    
+    .right {
+        background-color: #e5e5e5;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+    }
+    
+    @media only screen and (max-width:620px) {
+        /* For mobile phones: */
+        .menu, .main, .right {
+            width: 100%;
+        }
+    }
+    
+    body, html {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-family: Verdana;
+        color: #aaaaaa;
+    }
+    
+    #main {
+        height: 80%;
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: row;
+    }
+    
+    #main article {
+        padding: 20px;
+        background: #423b3b;
+        flex: 3 1 60%;
+        order: 2;
+    }
+    
+    #main nav {
+        background: black;
+        flex: 1 6 20%;
+        order: 1;
+        text-align: center;
+        display: block;
+        min-height: 30%;
+    }
+    
+    #main aside {
+        background: #000000;
+        flex: 1 6 20%;
+        order: 3;
+        text-align: center;
+        display: block;
+        min-height: 30%;
+    }
+    
+    header, footer {
+        font-size: 50px;
+        text-align: center;
+        color: white;
+        display: block;
+        min-height: 30%;
+        background: #bc3131;
+    }
+    
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+    
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+    
+    p {
+        font-size: 20px;
+        color: white;
+        text-align: justify;
+    }
+    
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .nav li a {
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        border-bottom: none;
+        padding: 14px 15px;
+        display: block;
+    }
+    
+    .nav ul {
+        display: none;
+        position: absolute;
+        left: 17.6%;
+        top: 102px;
+    }
+    
+    .nav li:hover>ul {
+        display: block;
+    }
+    
+    .nav a:hover {
+        color: white;
+        background-color: rgb(135, 135, 135);
+    }
+    
+    #video {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #imgPrincipal {
+        width: 150px;
+        padding-right: 10px;
+        float: left;
+    }
